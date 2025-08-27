@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import type { Answers, QuestionProps } from "../components/Answer3";
+import  { useState } from "react";
+import type { QuestionProps } from "../components/Answer3";
 import Image1Q1 from "../assets/fair_girl-removebg-preview.png";
 import Image2Q1 from "../assets/black_girl-removebg-preview.png";
 import Image3Q1 from "../assets/white-removebg-preview.png";
@@ -103,3 +103,4 @@ function MalePage() {
 }
 
 export default MalePage;
+
