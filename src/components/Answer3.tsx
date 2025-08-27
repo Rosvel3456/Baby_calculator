@@ -1,4 +1,3 @@
-import React from 'react'
 
 export interface QuestionProps {
 question: string;
@@ -35,5 +34,6 @@ function Answer3(data: QuestionProps) {
     </div>
   )
 }
+
 
 export default Answer3
