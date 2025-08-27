@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import type { Answers, QuestionProps } from "../components/Answer3";
 import Image1Q1 from "../assets/man_1-removebg-preview.png";
 import Image2Q1 from "../assets/man_2-removebg-preview.png";
@@ -6,9 +6,6 @@ import Image3Q1 from "../assets/whiteman.jpg";
 import Image1Q2 from "../assets/thin_man-removebg-preview.png";
 import Image2Q2 from "../assets/whiteman.jpg";
 import Image3Q2 from "../assets/big-removebg-preview.png";
-import Image1Q3 from "../assets/short-removebg-preview (1).png";
-import Image2Q3 from "../assets/meduimWoman-removebg-preview.png";
-import Image3Q3 from "../assets/TallestWoman-removebg-preview.png";
 import Answer3 from "../components/Answer3";
 
 function FemalePage() {
@@ -78,5 +75,6 @@ function FemalePage() {
     </div>
   );
 }
+
 
 export default FemalePage
