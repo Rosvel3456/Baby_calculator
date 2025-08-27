@@ -11,7 +11,7 @@ import Answer3 from "../components/Answer3";
 function FemalePage() {
  const Questiondata: QuestionProps[] = [
     {
-      question: "Which girl will you look like to marry?",
+      question: "Which boy will you look like to marry?",
       answers: [
         {
           image: Image1Q1,
@@ -74,5 +74,6 @@ function FemalePage() {
 
 
 export default FemalePage
+
 
 
