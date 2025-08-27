@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import React, { useState } from "react";
 import type { Answers, QuestionProps } from "../components/Answer3";
 import Image1Q1 from "../assets/fair_girl-removebg-preview.png";
 import Image2Q1 from "../assets/black_girl-removebg-preview.png";
@@ -66,27 +66,36 @@ function MalePage() {
     },
   ];
   const [counter, setCounter] = useState(0);
- 
+
 
   return (
-    <div  className="container">
+    <div className="container">
       {counter < Questiondata.length ? (
-       <div>
-         <Answer3
-          question={Questiondata[counter].question}
-          answers={Questiondata[counter].answers}
-        />
-                  <button className='button' style={{position: 'absolute', right: 50, width: 100,height: 50, marginTop: 50, fontSize: 18 }}  onClick={()=> 
-         setCounter((prev)=> prev + 1);
-       }>Next &gt;</button>
-
-       </div>
+        <div>
+          <Answer3
+            question={Questiondata[counter].question}
+            answers={Questiondata[counter].answers}
+          />
+          <button
+            className="button"
+            style={{
+              position: "absolute",
+              right: 50,
+              width: 100,
+              height: 50,
+              marginTop: 50,
+              fontSize: 18,
+            }}
+            onClick={() => setCounter((prev) => prev + 1)}
+          >
+            Next &gt;
+          </button>
+        </div>
       ) : (
-       <div className="congrats-container">
-            <p className="congrats">
-                Congratulations, you will have 11 children, Good luck feeding them
-            </p>
-
+        <div className="congrats-container">
+          <p className="congrats">
+            Congratulations, you will have 11 children, Good luck feeding them
+          </p>
         </div>
       )}
     </div>
@@ -94,4 +103,3 @@ function MalePage() {
 }
 
 export default MalePage;
-
