@@ -1,5 +1,5 @@
 import { useState } from "react";
-import type { Answers, QuestionProps } from "../components/Answer3";
+import type { QuestionProps } from "../components/Answer3";
 import Image1Q1 from "../assets/man_1-removebg-preview.png";
 import Image2Q1 from "../assets/man_2-removebg-preview.png";
 import Image3Q1 from "../assets/whiteman.jpg";
@@ -74,4 +74,5 @@ function FemalePage() {
 
 
 export default FemalePage
+
 
