@@ -1,0 +1,12 @@
+const homePage = [
+   { "id" : 1,
+    "text": 'Male'
+},
+
+
+ { "id" : 2,
+    "text": 'Female'
+},
+
+
+]
