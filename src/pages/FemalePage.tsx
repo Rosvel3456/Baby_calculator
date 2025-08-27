@@ -47,11 +47,7 @@ function FemalePage() {
     
   ];
   const [counter, setCounter] = useState(0);
-  const [answerData, setAnswerData] = useState<Answers[]>([]);
 
-  const handleAddtoAnswers = (data: Answers) => {
-    setAnswerData([...answerData, { image: data.image, type: data.type }]);
-  };
 
   return (
     <div  className="container">
@@ -78,3 +74,4 @@ function FemalePage() {
 
 
 export default FemalePage
+
