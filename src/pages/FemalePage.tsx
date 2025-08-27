@@ -63,7 +63,7 @@ function FemalePage() {
       ) : (
        <div className="congrats-container">
             <p className="congrats">
-                Congratulations, you will have 11 children, Good luck feeding them
+                Congratulations, you will have 6 children, 5 stubborn ones and one noisy one
             </p>
 
         </div>
@@ -74,6 +74,7 @@ function FemalePage() {
 
 
 export default FemalePage
+
 
 
 
