@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import type { Answers, QuestionProps } from "../components/Answer3";
 import Image1Q1 from "../assets/fair_girl-removebg-preview.png";
 import Image2Q1 from "../assets/black_girl-removebg-preview.png";
@@ -66,11 +66,7 @@ function MalePage() {
     },
   ];
   const [counter, setCounter] = useState(0);
-  const [answerData, setAnswerData] = useState<Answers[]>([]);
-
-  const handleAddtoAnswers = (data: Answers) => {
-    setAnswerData([...answerData, { image: data.image, type: data.type }]);
-  };
+ 
 
   return (
     <div  className="container">
@@ -80,7 +76,9 @@ function MalePage() {
           question={Questiondata[counter].question}
           answers={Questiondata[counter].answers}
         />
-                  <button className='button' style={{position: 'absolute', right: 50, width: 100,height: 50, marginTop: 50, fontSize: 18 }}  onClick={()=> setCounter((prev)=> prev + 1)}>Next &gt;</button>
+                  <button className='button' style={{position: 'absolute', right: 50, width: 100,height: 50, marginTop: 50, fontSize: 18 }}  onClick={()=> 
+         setCounter((prev)=> prev + 1);
+       }>Next &gt;</button>
 
        </div>
       ) : (
@@ -96,3 +94,4 @@ function MalePage() {
 }
 
 export default MalePage;
+
